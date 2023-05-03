@@ -39,7 +39,32 @@ function operate() {
 }
 
 function showResult() {
+  if(previousNumber.innerHTML === '' || currentNumber.innerHTML === '') return;
 
+  let a = Number(currentNumber.innerHTML);
+  let b = Number(previousNumber.innerHTML);
+  let operator = mathSign.innerHTML;
+
+  switch(operator) {
+    case '+':
+      result = a + b;
+      break;
+    case '-': 
+      result = b - a;
+      break;
+    case 'X':
+      result = a * b;
+      break;
+    case '/':
+      result = b / a;
+      break;
+    case '2^':
+      result = b ** a;
+      break;
+  }
+  currentNumber.innerHTML = result;
+  previousNumber.innerHTML = '';
+  mathSign.innerHTML = '';
 }
 
 function clearScreen() {
