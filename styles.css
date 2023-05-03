@@ -12,25 +12,25 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
   line-height: 1.5;
-  background-color: #B100E8;
+  /* background-color: #B100E8; */
+  background: linear-gradient(#e800e8, #8000e8);
 }
 
 .main {
-  border: 2px solid black;
-  min-width: 500px;
-  max-width: 500px;
-  padding: 20px;
+  height: 80%;
+  width: 500px;
+  padding: 12px;
   background-color: #7216a7;
   border-radius: 20px;
+  opacity: 0.7;
 }
 
 .calculator {
-  border: 2px solid black;
   min-height: 100px;
   background-color: #b863e9;
   margin-bottom: 20px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .display {
@@ -46,13 +46,19 @@ body {
 }
 
 .previous-number {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: rgb(30, 30, 30);
+}
+
+.math-sign {
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .current-number {
   word-break: break-all;
 }
+
 
 .button-container {
   display: flex;
@@ -60,6 +66,7 @@ body {
 
 .panel {
   display: grid;
+  height: 80%;
 }
 
 .panel button {
