@@ -45,7 +45,7 @@ body {
   padding: 5px;
 }
 
-.previous-number {
+.previous-number p{
   font-size: 1.3rem;
   color: rgb(30, 30, 30);
 }
@@ -56,7 +56,10 @@ body {
 }
 
 .current-number {
+  font-size: 1.7rem;
+  font-weight: bold;
   word-break: break-all;
+  text-align: right;
 }
 
 
