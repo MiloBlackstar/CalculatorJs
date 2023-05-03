@@ -10,7 +10,7 @@ const clearButton = document.querySelector('.clear');
 let result = '';
 //---------------
 
-//functions
+//functions -------------------------
 
 function displayNumbers() {
   if(this.textContent === '.' && currentNumber.innerHTML.includes('.')){
@@ -68,14 +68,13 @@ function showResult() {
 }
 
 function clearScreen() {
-
+  result = '';
+  currentNumber.innerHTML = '';
+  previousNumber.innerHTML = '';
+  mathSign.innerHTML = '';
 }
 
-function clearHistory() {
-
-}
-
-//---------------
+//------------------------------------------
 
 //listening buttons
 
